@@ -1,11 +1,7 @@
-@media screen {
-    div {
-        height: 1468px;
-        width: 1920px;
-        left: -5622px;
-        top: -8265px;
-        border-radius: 0px;
-    }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 .body {
@@ -14,11 +10,10 @@
 
 .block__row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding: 40px;
     gap: 10px;
-    position: absolute;
     width: 796px;
     height: 512px;
     left: 260px;
@@ -74,11 +69,10 @@
 .block__bot {
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding: 40px;
     gap: 10px;
-    position: absolute;
     width: 796px;
     height: 260px;
     left: 260px;
@@ -99,4 +93,10 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-color: red;
+    }
 }
